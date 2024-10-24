@@ -1,0 +1,522 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2B3901C02CC88A2700110EEE /* jm.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2B3901BE2CC88A2700110EEE /* jm.mp3 */; };
+		2B3901C12CC88A2700110EEE /* HCKeepBGRunManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3901BF2CC88A2700110EEE /* HCKeepBGRunManager.swift */; };
+		2B3901C42CC88BFD00110EEE /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = 2B3901C32CC88BFD00110EEE /* index.html */; };
+		2B3901C62CC88CFA00110EEE /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3901C52CC88CFA00110EEE /* SettingView.swift */; };
+		2B3901C82CC88D9C00110EEE /* globalViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3901C72CC88D9C00110EEE /* globalViewModel.swift */; };
+		2B3901CA2CC8A8C600110EEE /* extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3901C92CC8A8C600110EEE /* extension.swift */; };
+		2B3901CC2CC8C25E00110EEE /* FilesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3901CB2CC8C25E00110EEE /* FilesView.swift */; };
+		2B47436E2CC8FC2D00A3EF34 /* KSPlayer in Frameworks */ = {isa = PBXBuildFile; productRef = 2B47436D2CC8FC2D00A3EF34 /* KSPlayer */; };
+		2B4743742CC8FD1800A3EF34 /* libssl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B4743722CC8FD1800A3EF34 /* libssl.a */; };
+		2B4743752CC8FD1800A3EF34 /* libcrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B4743732CC8FD1800A3EF34 /* libcrypto.a */; };
+		2B4743762CCA7FFC00A3EF34 /* libaria2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B3901CE2CC8E57F00110EEE /* libaria2.a */; };
+		2B4DD2592CAA769300AA6DBB /* aria2App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B4DD2582CAA769300AA6DBB /* aria2App.swift */; };
+		2B4DD25B2CAA769300AA6DBB /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B4DD25A2CAA769300AA6DBB /* HomeView.swift */; };
+		2B4DD25D2CAA769500AA6DBB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B4DD25C2CAA769500AA6DBB /* Assets.xcassets */; };
+		2B4DD2602CAA769500AA6DBB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B4DD25F2CAA769500AA6DBB /* Preview Assets.xcassets */; };
+		2B4DD2732CAA7B6800AA6DBB /* Aria2Downloader.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2B4DD2722CAA7B6800AA6DBB /* Aria2Downloader.mm */; };
+		2B4DD2782CAA815900AA6DBB /* libexpat.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B4DD2762CAA815900AA6DBB /* libexpat.tbd */; };
+		2B4DD27B2CAA816300AA6DBB /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B4DD27A2CAA816300AA6DBB /* libz.tbd */; };
+		2B4DD27F2CAA816B00AA6DBB /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B4DD27D2CAA816B00AA6DBB /* libsqlite3.tbd */; };
+		2BC2FB722CBBB69000F2465A /* LocalNetworkPermissionChecker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BC2FB712CBBB69000F2465A /* LocalNetworkPermissionChecker.swift */; };
+		2BE720312CB4DD0D00B11F44 /* libxml2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B4DD2802CAA9FCF00AA6DBB /* libxml2.tbd */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2B3901BE2CC88A2700110EEE /* jm.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = jm.mp3; sourceTree = "<group>"; };
+		2B3901BF2CC88A2700110EEE /* HCKeepBGRunManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HCKeepBGRunManager.swift; sourceTree = "<group>"; };
+		2B3901C32CC88BFD00110EEE /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
+		2B3901C52CC88CFA00110EEE /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
+		2B3901C72CC88D9C00110EEE /* globalViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = globalViewModel.swift; sourceTree = "<group>"; };
+		2B3901C92CC8A8C600110EEE /* extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extension.swift; sourceTree = "<group>"; };
+		2B3901CB2CC8C25E00110EEE /* FilesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilesView.swift; sourceTree = "<group>"; };
+		2B3901CE2CC8E57F00110EEE /* libaria2.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libaria2.a; path = libaria2/lib/libaria2.a; sourceTree = "<group>"; };
+		2B3901D02CC8E5BF00110EEE /* libaria2 */ = {isa = PBXFileReference; lastKnownFileType = folder; path = libaria2; sourceTree = "<group>"; };
+		2B4743702CC8FCF400A3EF34 /* libaria2.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libaria2.a; path = aria2/libaria2/lib/libaria2.a; sourceTree = "<group>"; };
+		2B4743722CC8FD1800A3EF34 /* libssl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libssl.a; path = openssl/lib/libssl.a; sourceTree = "<group>"; };
+		2B4743732CC8FD1800A3EF34 /* libcrypto.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcrypto.a; path = openssl/lib/libcrypto.a; sourceTree = "<group>"; };
+		2B4DD2552CAA769300AA6DBB /* aria2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = aria2.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2B4DD2582CAA769300AA6DBB /* aria2App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = aria2App.swift; sourceTree = "<group>"; };
+		2B4DD25A2CAA769300AA6DBB /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		2B4DD25C2CAA769500AA6DBB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2B4DD25F2CAA769500AA6DBB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		2B4DD26D2CAA794600AA6DBB /* libaria2.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libaria2.a; path = "aria2-lib/lib/libaria2.a"; sourceTree = "<group>"; };
+		2B4DD2712CAA7B6800AA6DBB /* aria2-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "aria2-Bridging-Header.h"; sourceTree = "<group>"; };
+		2B4DD2722CAA7B6800AA6DBB /* Aria2Downloader.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = Aria2Downloader.mm; sourceTree = "<group>"; };
+		2B4DD2742CAA7B8B00AA6DBB /* Aria2Downloader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Aria2Downloader.h; sourceTree = "<group>"; };
+		2B4DD2762CAA815900AA6DBB /* libexpat.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libexpat.tbd; path = usr/lib/libexpat.tbd; sourceTree = SDKROOT; };
+		2B4DD2772CAA815900AA6DBB /* libexpat.1.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libexpat.1.tbd; path = usr/lib/libexpat.1.tbd; sourceTree = SDKROOT; };
+		2B4DD27A2CAA816300AA6DBB /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		2B4DD27C2CAA816B00AA6DBB /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+		2B4DD27D2CAA816B00AA6DBB /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		2B4DD2802CAA9FCF00AA6DBB /* libxml2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.tbd; path = usr/lib/libxml2.tbd; sourceTree = SDKROOT; };
+		2B4DD2822CAAA06000AA6DBB /* libxml2.2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.2.tbd; path = usr/lib/libxml2.2.tbd; sourceTree = SDKROOT; };
+		2B5A0FCF2CBA8A390090403F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		2B5A0FD02CBA8B330090403F /* libcoretls.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libcoretls.tbd; path = usr/lib/libcoretls.tbd; sourceTree = SDKROOT; };
+		2BC2FB672CBBA38E00F2465A /* libssl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libssl.a; path = "../../github/OpenSSL-for-iPhone/bin/iPhoneOS17.2-arm64.sdk/lib/libssl.a"; sourceTree = "<group>"; };
+		2BC2FB682CBBA38E00F2465A /* libcrypto.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcrypto.a; path = "../../github/OpenSSL-for-iPhone/bin/iPhoneOS17.2-arm64.sdk/lib/libcrypto.a"; sourceTree = "<group>"; };
+		2BC2FB6B2CBBA4E600F2465A /* openssl */ = {isa = PBXFileReference; lastKnownFileType = folder; path = openssl; sourceTree = "<group>"; };
+		2BC2FB6D2CBBA50100F2465A /* libssl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libssl.a; path = "iPhoneOS17.2-arm64.sdk/lib/libssl.a"; sourceTree = "<group>"; };
+		2BC2FB6E2CBBA50100F2465A /* libcrypto.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcrypto.a; path = "iPhoneOS17.2-arm64.sdk/lib/libcrypto.a"; sourceTree = "<group>"; };
+		2BC2FB712CBBB69000F2465A /* LocalNetworkPermissionChecker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalNetworkPermissionChecker.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2B4DD2522CAA769300AA6DBB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B4743742CC8FD1800A3EF34 /* libssl.a in Frameworks */,
+				2B4743752CC8FD1800A3EF34 /* libcrypto.a in Frameworks */,
+				2B47436E2CC8FC2D00A3EF34 /* KSPlayer in Frameworks */,
+				2BE720312CB4DD0D00B11F44 /* libxml2.tbd in Frameworks */,
+				2B4DD27F2CAA816B00AA6DBB /* libsqlite3.tbd in Frameworks */,
+				2B4DD27B2CAA816300AA6DBB /* libz.tbd in Frameworks */,
+				2B4DD2782CAA815900AA6DBB /* libexpat.tbd in Frameworks */,
+				2B4743762CCA7FFC00A3EF34 /* libaria2.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2B3901BD2CC889FE00110EEE /* background */ = {
+			isa = PBXGroup;
+			children = (
+				2B3901BF2CC88A2700110EEE /* HCKeepBGRunManager.swift */,
+				2B3901BE2CC88A2700110EEE /* jm.mp3 */,
+			);
+			path = background;
+			sourceTree = "<group>";
+		};
+		2B3901C22CC88BE600110EEE /* www */ = {
+			isa = PBXGroup;
+			children = (
+				2B3901C32CC88BFD00110EEE /* index.html */,
+			);
+			path = www;
+			sourceTree = "<group>";
+		};
+		2B4DD24C2CAA769300AA6DBB = {
+			isa = PBXGroup;
+			children = (
+				2B3901D02CC8E5BF00110EEE /* libaria2 */,
+				2B3901C22CC88BE600110EEE /* www */,
+				2B3901BD2CC889FE00110EEE /* background */,
+				2BC2FB6B2CBBA4E600F2465A /* openssl */,
+				2B4DD2572CAA769300AA6DBB /* aria2 */,
+				2B4DD2562CAA769300AA6DBB /* Products */,
+				2B4DD26C2CAA794600AA6DBB /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		2B4DD2562CAA769300AA6DBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2B4DD2552CAA769300AA6DBB /* aria2.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2B4DD2572CAA769300AA6DBB /* aria2 */ = {
+			isa = PBXGroup;
+			children = (
+				2B5A0FCF2CBA8A390090403F /* Info.plist */,
+				2B4DD2582CAA769300AA6DBB /* aria2App.swift */,
+				2B4DD25A2CAA769300AA6DBB /* HomeView.swift */,
+				2B4DD25C2CAA769500AA6DBB /* Assets.xcassets */,
+				2B4DD25E2CAA769500AA6DBB /* Preview Content */,
+				2B4DD2722CAA7B6800AA6DBB /* Aria2Downloader.mm */,
+				2B4DD2712CAA7B6800AA6DBB /* aria2-Bridging-Header.h */,
+				2B4DD2742CAA7B8B00AA6DBB /* Aria2Downloader.h */,
+				2BC2FB712CBBB69000F2465A /* LocalNetworkPermissionChecker.swift */,
+				2B3901C52CC88CFA00110EEE /* SettingView.swift */,
+				2B3901C72CC88D9C00110EEE /* globalViewModel.swift */,
+				2B3901C92CC8A8C600110EEE /* extension.swift */,
+				2B3901CB2CC8C25E00110EEE /* FilesView.swift */,
+			);
+			path = aria2;
+			sourceTree = "<group>";
+		};
+		2B4DD25E2CAA769500AA6DBB /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				2B4DD25F2CAA769500AA6DBB /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		2B4DD26C2CAA794600AA6DBB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2B4743732CC8FD1800A3EF34 /* libcrypto.a */,
+				2B4743722CC8FD1800A3EF34 /* libssl.a */,
+				2B3901CE2CC8E57F00110EEE /* libaria2.a */,
+				2B4743702CC8FCF400A3EF34 /* libaria2.a */,
+				2BC2FB682CBBA38E00F2465A /* libcrypto.a */,
+				2BC2FB6E2CBBA50100F2465A /* libcrypto.a */,
+				2BC2FB672CBBA38E00F2465A /* libssl.a */,
+				2BC2FB6D2CBBA50100F2465A /* libssl.a */,
+				2B5A0FD02CBA8B330090403F /* libcoretls.tbd */,
+				2B4DD2822CAAA06000AA6DBB /* libxml2.2.tbd */,
+				2B4DD2802CAA9FCF00AA6DBB /* libxml2.tbd */,
+				2B4DD27C2CAA816B00AA6DBB /* libsqlite3.0.tbd */,
+				2B4DD27D2CAA816B00AA6DBB /* libsqlite3.tbd */,
+				2B4DD27A2CAA816300AA6DBB /* libz.tbd */,
+				2B4DD2772CAA815900AA6DBB /* libexpat.1.tbd */,
+				2B4DD2762CAA815900AA6DBB /* libexpat.tbd */,
+				2B4DD26D2CAA794600AA6DBB /* libaria2.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2B4DD2542CAA769300AA6DBB /* aria2 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2B4DD2632CAA769500AA6DBB /* Build configuration list for PBXNativeTarget "aria2" */;
+			buildPhases = (
+				2B4DD2512CAA769300AA6DBB /* Sources */,
+				2B4DD2522CAA769300AA6DBB /* Frameworks */,
+				2B4DD2532CAA769300AA6DBB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = aria2;
+			packageProductDependencies = (
+				2B47436D2CC8FC2D00A3EF34 /* KSPlayer */,
+			);
+			productName = aria2;
+			productReference = 2B4DD2552CAA769300AA6DBB /* aria2.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2B4DD24D2CAA769300AA6DBB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1520;
+				LastUpgradeCheck = 1520;
+				TargetAttributes = {
+					2B4DD2542CAA769300AA6DBB = {
+						CreatedOnToolsVersion = 15.2;
+						LastSwiftMigration = 1520;
+					};
+				};
+			};
+			buildConfigurationList = 2B4DD2502CAA769300AA6DBB /* Build configuration list for PBXProject "aria2" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2B4DD24C2CAA769300AA6DBB;
+			packageReferences = (
+				2B47436C2CC8FC2D00A3EF34 /* XCRemoteSwiftPackageReference "KSPlayer" */,
+			);
+			productRefGroup = 2B4DD2562CAA769300AA6DBB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2B4DD2542CAA769300AA6DBB /* aria2 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2B4DD2532CAA769300AA6DBB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B3901C42CC88BFD00110EEE /* index.html in Resources */,
+				2B4DD2602CAA769500AA6DBB /* Preview Assets.xcassets in Resources */,
+				2B4DD25D2CAA769500AA6DBB /* Assets.xcassets in Resources */,
+				2B3901C02CC88A2700110EEE /* jm.mp3 in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2B4DD2512CAA769300AA6DBB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B3901C82CC88D9C00110EEE /* globalViewModel.swift in Sources */,
+				2B4DD2732CAA7B6800AA6DBB /* Aria2Downloader.mm in Sources */,
+				2BC2FB722CBBB69000F2465A /* LocalNetworkPermissionChecker.swift in Sources */,
+				2B4DD25B2CAA769300AA6DBB /* HomeView.swift in Sources */,
+				2B3901C62CC88CFA00110EEE /* SettingView.swift in Sources */,
+				2B3901C12CC88A2700110EEE /* HCKeepBGRunManager.swift in Sources */,
+				2B3901CC2CC8C25E00110EEE /* FilesView.swift in Sources */,
+				2B4DD2592CAA769300AA6DBB /* aria2App.swift in Sources */,
+				2B3901CA2CC8A8C600110EEE /* extension.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		2B4DD2612CAA769500AA6DBB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2B4DD2622CAA769500AA6DBB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2B4DD2642CAA769500AA6DBB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"aria2/Preview Content\"";
+				DEVELOPMENT_TEAM = FK68V4STVV;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/libaria2/include/aria2";
+				INFOPLIST_FILE = aria2/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Aria2Server;
+				INFOPLIST_KEY_LSSupportsOpeningDocumentsInPlace = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/aria2",
+					"$(PROJECT_DIR)/libaria2/lib",
+					"$(PROJECT_DIR)/openssl/lib",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gendago.aria2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "aria2/aria2-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2B4DD2652CAA769500AA6DBB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"aria2/Preview Content\"";
+				DEVELOPMENT_TEAM = FK68V4STVV;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/libaria2/include/aria2";
+				INFOPLIST_FILE = aria2/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Aria2Server;
+				INFOPLIST_KEY_LSSupportsOpeningDocumentsInPlace = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/aria2",
+					"$(PROJECT_DIR)/libaria2/lib",
+					"$(PROJECT_DIR)/openssl/lib",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gendago.aria2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "aria2/aria2-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2B4DD2502CAA769300AA6DBB /* Build configuration list for PBXProject "aria2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2B4DD2612CAA769500AA6DBB /* Debug */,
+				2B4DD2622CAA769500AA6DBB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2B4DD2632CAA769500AA6DBB /* Build configuration list for PBXNativeTarget "aria2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2B4DD2642CAA769500AA6DBB /* Debug */,
+				2B4DD2652CAA769500AA6DBB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		2B47436C2CC8FC2D00A3EF34 /* XCRemoteSwiftPackageReference "KSPlayer" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kingslay/KSPlayer";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		2B47436D2CC8FC2D00A3EF34 /* KSPlayer */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2B47436C2CC8FC2D00A3EF34 /* XCRemoteSwiftPackageReference "KSPlayer" */;
+			productName = KSPlayer;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 2B4DD24D2CAA769300AA6DBB /* Project object */;
+}
