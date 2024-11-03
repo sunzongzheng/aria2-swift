@@ -27,11 +27,15 @@ struct FilesView: View {
                         ForEach(fileList, id: \.name) { item in
                             Button(action: {
                                 print(item)
-                                if (item.icon == "video.fill" || item.icon == "music.note") {
-                                    self.videoSrc = item.path
-                                    self.videoTitle = item.name
-                                    self.videoOptions = KSOptions()
-                                    self.showVideoPlayerViewController = true
+                                if #available(iOS 16.0, *) {
+                                    if (item.icon == "video.fill" || item.icon == "music.note") {
+                                        self.videoSrc = item.path
+                                        self.videoTitle = item.name
+                                        self.videoOptions = KSOptions()
+                                        self.showVideoPlayerViewController = true
+                                    } else {
+                                        showAlert = true
+                                    }
                                 } else {
                                     showAlert = true
                                 }
@@ -61,7 +65,7 @@ struct FilesView: View {
                                         Text(item.name)
                                             .font(.headline)
                                             .frame(maxWidth: .infinity, alignment: .leading)
-                                        Text("\(item.creationDate?.formatted() ?? "Unknown")")
+                                        Text(formatterDate(date: item.creationDate ?? Date()))
                                             .font(.subheadline)
                                             .foregroundColor(.gray)
                                             .frame(maxWidth: .infinity, alignment: .leading)
@@ -87,8 +91,12 @@ struct FilesView: View {
                 refreshFileList()
             })
             .sheet(isPresented: $showVideoPlayerViewController) {
-                CustomKSVideoPlayerView(videoSrc: $videoSrc, videoTitle: $videoTitle, videoOptions: $videoOptions)
-                                .ignoresSafeArea()
+                if #available(iOS 16.0, *){
+                    CustomKSVideoPlayerView(videoSrc: $videoSrc, videoTitle: $videoTitle, videoOptions: $videoOptions)
+                                    .ignoresSafeArea()
+                } else{
+                    Text("暂不支持预览此类型文件")
+                }
             }
             .alert(isPresented: $showAlert) {
                 Alert(
@@ -136,12 +144,19 @@ struct FilesView: View {
             return "doc.fill"
         }
     }
+    
+    func formatterDate(date: Date) -> String{
+        let df = DateFormatter()
+        df.dateFormat = "yyyy-MM-dd HH:mm:ss"
+        return df.string(from: date)
+    }
 }
 
 #Preview {
     FilesView()
 }
 
+@available(iOS 16.0, *)
 struct CustomKSVideoPlayerView: View {
     @Binding var videoSrc: String
     @Binding var videoOptions: KSOptions
