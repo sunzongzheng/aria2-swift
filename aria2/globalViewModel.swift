@@ -33,9 +33,9 @@ class GlobalViewModel: ObservableObject {
             print("无法获取 Document 目录")
             return
         }
-        
+
         let fileURL = documentDirectory.appendingPathComponent("aria2.conf")
-        
+
         if fileManager.fileExists(atPath: fileURL.path) {
             print("配置文件已存在")
         } else {
@@ -44,9 +44,9 @@ class GlobalViewModel: ObservableObject {
         ## '#'开头为注释内容, 选项都有相应的注释说明, 根据需要修改 ##
         ## 被注释的选项填写的是默认值, 建议在需要修改时再取消注释  ##
         ## 添加了@和默认启用的选项都是系统需要调用的，请不要随意改动否则可能无法正常运行
-
+        
         ## 文件保存相关 ##
-
+        
         # 文件的保存路径(可使用绝对路径或相对路径), 默认: 当前启动位置
         # 此项 OS X 无法使用 $HOME 及 ~/ 设置路径  建议使用 /users/用户名/downloads
         #@dir=$HOME/downloads
@@ -59,9 +59,9 @@ class GlobalViewModel: ObservableObject {
         # file-allocation=none
         # 断点续传
         #@continue=true
-
+        
         ## 下载连接相关 ##
-
+        
         # 最大同时下载任务数, 运行时可修改, 默认:5
         #@max-concurrent-downloads=10
         # 同一服务器连接数, 添加时可指定, 默认:1
@@ -85,18 +85,18 @@ class GlobalViewModel: ObservableObject {
         #@allow-overwrite=true
         #自动重命名
         #@auto-file-renaming=true
-
+        
         ## 进度保存相关 ##
-
+        
         # 从会话文件中读取下载任务
         #@input-file=/Users/Shared/aria2.session
         # 在Aria2退出时保存`错误/未完成`的下载任务到会话文件
         #@save-session=/Users/Shared/aria2.session
         # 定时保存会话, 0为退出时才保存, 需1.16.1以上版本, 默认:0
         save-session-interval=30
-
+        
         ## RPC相关设置 ##
-
+        
         # 启用RPC, 默认:false
         enable-rpc=true
         check-certificate=false
@@ -111,9 +111,9 @@ class GlobalViewModel: ObservableObject {
         rpc-listen-port=6800
         # 设置的RPC授权令牌, v1.18.4新增功能, 取代 --rpc-user 和 --rpc-passwd 选项
         #rpc-secret=your_rpc_secret
-
+        
         ## BT/PT下载相关 ##
-
+        
         # 当下载的是一个种子(以.torrent结尾)时, 自动开始BT任务, 默认:true
         #follow-torrent=true
         # BT监听端口, 当端口被屏蔽时使用, 默认:6881-6999
@@ -121,13 +121,13 @@ class GlobalViewModel: ObservableObject {
         # 单个种子最大连接数, 默认:55
         #bt-max-peers=55
         # 打开DHT功能, PT需要禁用, 默认:true
-        enable-dht=false
+        enable-dht=true
         # 打开IPv6 DHT功能, PT需要禁用
-        #enable-dht6=false
+        enable-dht6=true
         # DHT网络监听端口, 默认:6881-6999
-        #dht-listen-port=6881-6999
+        dht-listen-port=6881-6999
         # 本地节点查找, PT需要禁用, 默认:false
-        #bt-enable-lpd=false
+        bt-enable-lpd=true
         # 种子交换, PT需要禁用, 默认:true
         #enable-peer-exchange=false
         # 每个种子限速, 对少种的PT很有用, 默认:50K
@@ -146,10 +146,10 @@ class GlobalViewModel: ObservableObject {
         bt-seed-unverified=true
         # 保存磁力链接元数据为种子文件(.torrent文件), 默认:false
         bt-save-metadata=true
-
+        
         # bt-tracker数据来自https://github.com/ngosang/trackerslist/blob/master/trackers_all_udp.txt
-
-        bt-tracker=udp://9.rarbg.com:2710/announce,udp://tracker.skyts.net:6969/announce,udp://tracker.safe.moe:6969/announce,udp://tracker.piratepublic.com:1337/announce,udp://tracker.pirateparty.gr:6969/announce,udp://tracker.coppersurfer.tk:6969/announce,udp://tracker.leechers-paradise.org:6969/announce,udp://allesanddro.de:1337/announce,udp://p4p.arenabg.com:1337/announce,udp://tracker.opentrackr.org:1337/announce,udp://public.popcorn-tracker.org:6969/announce,udp://wambo.club:1337/announce,udp://trackerxyz.tk:1337/announce,udp://tracker4.itzmx.com:2710/announce,udp://tracker2.christianbro.pw:6969/announce,udp://tracker1.xku.tv:6969/announce,udp://tracker1.wasabii.com.tw:6969/announce,udp://tracker.zer0day.to:1337/announce
+        
+        bt-tracker=http://93.158.213.92:1337/announce,udp://23.140.248.9:1337/announce,udp://186.10.170.97:1337/announce,udp://185.243.218.213:80/announce,udp://91.216.110.53:451/announce,udp://23.157.120.14:6969/announce,udp://208.83.20.20:6969/announce,udp://34.89.91.10:6969/announce,udp://35.227.59.57:1337/announce,udp://109.201.134.183:80/announce,udp://45.9.60.30:6969/announce,udp://35.227.59.57:6969/announce,udp://34.94.76.146:6969/announce,http://34.94.76.146:80/announce,http://34.89.91.10:80/announce,udp://tracker.opentrackr.org:1337/announce,udp://open.demonii.com:1337/announce,udp://open.tracker.cl:1337/announce,udp://open.stealth.si:80/announce,udp://tracker.torrent.eu.org:451/announce,udp://tracker-udp.gbitt.info:80/announce,udp://explodie.org:6969/announce,udp://tracker.dump.cl:6969/announce,udp://tracker.bittor.pw:1337/announce,udp://opentracker.io:6969/announce,udp://open.free-tracker.ga:6969/announce,udp://leet-tracker.moe:1337/announce,udp://isk.richardsw.club:6969/announce,udp://exodus.desync.com:6969/announce,https://tracker.tamersunion.org:443/announce,http://tracker1.bt.moack.co.kr:80/announce,http://tracker.ipv6tracker.org:80/announce,http://tr.kxmp.cf:80/announce,udp://tracker.tiny-vps.com:6969/announce,udp://tracker.theoks.net:6969/announce
 
         """
                 try content.write(to: fileURL, atomically: true, encoding: .utf8)
