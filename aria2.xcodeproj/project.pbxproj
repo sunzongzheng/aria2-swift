@@ -27,6 +27,7 @@
 		2B4DD27B2CAA816300AA6DBB /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B4DD27A2CAA816300AA6DBB /* libz.tbd */; };
 		2B4DD27F2CAA816B00AA6DBB /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B4DD27D2CAA816B00AA6DBB /* libsqlite3.tbd */; };
 		2BC2FB722CBBB69000F2465A /* LocalNetworkPermissionChecker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BC2FB712CBBB69000F2465A /* LocalNetworkPermissionChecker.swift */; };
+		2BE567002CD747750001AFA8 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2BE567022CD747750001AFA8 /* Localizable.strings */; };
 		2BE720312CB4DD0D00B11F44 /* libxml2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B4DD2802CAA9FCF00AA6DBB /* libxml2.tbd */; };
 /* End PBXBuildFile section */
 
@@ -67,6 +68,8 @@
 		2BC2FB6D2CBBA50100F2465A /* libssl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libssl.a; path = "iPhoneOS17.2-arm64.sdk/lib/libssl.a"; sourceTree = "<group>"; };
 		2BC2FB6E2CBBA50100F2465A /* libcrypto.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcrypto.a; path = "iPhoneOS17.2-arm64.sdk/lib/libcrypto.a"; sourceTree = "<group>"; };
 		2BC2FB712CBBB69000F2465A /* LocalNetworkPermissionChecker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalNetworkPermissionChecker.swift; sourceTree = "<group>"; };
+		2BE567012CD747750001AFA8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		2BE567032CD747990001AFA8 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,6 +145,7 @@
 				2B3901C72CC88D9C00110EEE /* globalViewModel.swift */,
 				2B3901C92CC8A8C600110EEE /* extension.swift */,
 				2B3901CB2CC8C25E00110EEE /* FilesView.swift */,
+				2BE567022CD747750001AFA8 /* Localizable.strings */,
 			);
 			path = aria2;
 			sourceTree = "<group>";
@@ -224,6 +228,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"zh-Hans",
 			);
 			mainGroup = 2B4DD24C2CAA769300AA6DBB;
 			packageReferences = (
@@ -243,6 +248,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2BE567002CD747750001AFA8 /* Localizable.strings in Resources */,
 				2B3901C42CC88BFD00110EEE /* index.html in Resources */,
 				2B4DD2602CAA769500AA6DBB /* Preview Assets.xcassets in Resources */,
 				2B4DD25D2CAA769500AA6DBB /* Assets.xcassets in Resources */,
@@ -271,12 +277,25 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXVariantGroup section */
+		2BE567022CD747750001AFA8 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2BE567012CD747750001AFA8 /* en */,
+				2BE567032CD747990001AFA8 /* zh-Hans */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
 		2B4DD2612CAA769500AA6DBB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -340,6 +359,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";

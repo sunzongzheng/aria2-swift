@@ -1,0 +1,19 @@
+"HomePage" = "HomePage";
+"Files" = "Files";
+"Setting" = "Setting";
+
+"FilesViewTips" = "Use the File App to access the Aria2Server/Downloads directory\nTo support more file operation functions";
+"NoFile" = "No File in Aria2Server/Downloads directory";
+"NotSupportFileType" = "Preview of this type of file is not supported yet";
+"Tips" = "Tips";
+"UnavailableVideoUrl" = "Unavailable Video URL";
+
+"Common" = "Common";
+"BackgroundRun" = "Run in background";
+"Verion" = "Version Info";
+"App Version" = "App Version";
+"Aria2 Version" = "Aria2 Version";
+"About" = "About";
+"License" = "This application complies with the GPL2.0 open source agreement";
+"OK" = "OK";
+"JoinDiscussion" = "Join the communication group";

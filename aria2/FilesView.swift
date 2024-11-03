@@ -23,7 +23,7 @@ struct FilesView: View {
         VStack {
             if (fileList.count > 0) {
                 List {
-                    Section(header: Text("使用文件App访问Aria2Server/Downloads目录\n支持更多文件操作功能").textCase(.none)) {
+                    Section(header: Text("FilesViewTips").textCase(.none)) {
                         ForEach(fileList, id: \.name) { item in
                             Button(action: {
                                 print(item)
@@ -82,7 +82,7 @@ struct FilesView: View {
                 Image("无数据")
                     .resizable()
                     .frame(width: 200, height: 200)
-                Text("下载目录中没有文件")
+                Text("NoFile")
                     .padding(.bottom, 100)
                     .padding(.top, 20)
             }
@@ -95,14 +95,14 @@ struct FilesView: View {
                     CustomKSVideoPlayerView(videoSrc: $videoSrc, videoTitle: $videoTitle, videoOptions: $videoOptions)
                                     .ignoresSafeArea()
                 } else{
-                    Text("暂不支持预览此类型文件")
+                    Text("NotSupportFileType")
                 }
             }
             .alert(isPresented: $showAlert) {
                 Alert(
-                    title: Text("提示"),
-                    message: Text("暂不支持预览此类型文件"),
-                    dismissButton: .default(Text("确认")) {
+                    title: Text("Tips"),
+                    message: Text("NotSupportFileType"),
+                    dismissButton: .default(Text("OK")) {
                     }
                 )
             }
@@ -180,7 +180,7 @@ struct CustomKSVideoPlayerView: View {
                     print("播放源: \(videoSrc)")
                 }
         } else {
-            Text("无效的视频 URL")
+            Text("UnavailableVideoUrl")
         }
     }
 }

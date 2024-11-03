@@ -22,29 +22,29 @@ struct TabBarView: View {
             }
                 .navigationViewStyle(StackNavigationViewStyle())
                 .tabItem {
-                    Label("首页", systemImage: "house")
+                    Label("HomePage", systemImage: "house")
                 }
             
             NavigationView {
                 FilesView()
-                    .navigationTitle("文件")
+                    .navigationTitle("Files")
                     .navigationBarTitleDisplayMode(.inline)
                     .navigationBarColor(backgroundColor: UIColor.rgb(59, 112, 184), textColor: .white)
             }
                 .navigationViewStyle(StackNavigationViewStyle())
                 .tabItem {
-                    Label("文件", systemImage: "folder")
+                    Label("Files", systemImage: "folder")
                 }
             
             NavigationView {
                 SettingView()
-                    .navigationTitle("设置")
+                    .navigationTitle("Setting")
                     .navigationBarTitleDisplayMode(.inline)
                     .navigationBarColor(backgroundColor: UIColor.rgb(59, 112, 184), textColor: .white)
             }
                 .navigationViewStyle(StackNavigationViewStyle())
                 .tabItem {
-                    Label("设置", systemImage: "gear")
+                    Label("Setting", systemImage: "gear")
                 }
         }
         .onAppear {
