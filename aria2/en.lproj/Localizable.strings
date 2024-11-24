@@ -3,10 +3,13 @@
 "Setting" = "Setting";
 
 "FilesViewTips" = "Use the File App to access the Aria2Server/Downloads directory\nTo support more file operation functions";
-"NoFile" = "No File in Aria2Server/Downloads directory";
+"NoFile" = "No File in directory";
 "NotSupportFileType" = "Preview of this type of file is not supported yet";
 "Tips" = "Tips";
 "UnavailableVideoUrl" = "Unavailable Video URL";
+"Share" = "Share";
+"Delete" = "Delete";
+"FileOperations" = "File Operations";
 
 "Common" = "Common";
 "BackgroundRun" = "Run in background";

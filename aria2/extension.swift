@@ -45,3 +45,34 @@ extension UIColor {
         return UIColor(red: red / 255.0, green: green / 255.0, blue: blue / 255.0, alpha: alpha)
     }
 }
+
+struct ConditionalSwipeActionsModifier: ViewModifier {
+    var swipeActions: () -> AnyView
+    var longPressActions: (() -> Void)?
+
+    func body(content: Content) -> some View {
+        if #available(iOS 15.0, *) {
+            content.swipeActions {
+                swipeActions()
+            }
+        } else {
+            content
+                .onLongPressGesture {
+                    longPressActions?()
+                }
+        }
+    }
+}
+
+extension View {
+    // 条件执行 swipeActions 的方法
+    func conditionalSwipeActions(
+        @ViewBuilder swipeActions: @escaping () -> some View,
+        longPressActions: (() -> Void)? = nil
+    ) -> some View {
+        self.modifier(ConditionalSwipeActionsModifier(
+            swipeActions: { AnyView(swipeActions()) },
+            longPressActions: longPressActions
+        ))
+    }
+}

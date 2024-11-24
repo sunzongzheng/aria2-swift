@@ -14,10 +14,10 @@
 		2B3901C82CC88D9C00110EEE /* globalViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3901C72CC88D9C00110EEE /* globalViewModel.swift */; };
 		2B3901CA2CC8A8C600110EEE /* extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3901C92CC8A8C600110EEE /* extension.swift */; };
 		2B3901CC2CC8C25E00110EEE /* FilesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3901CB2CC8C25E00110EEE /* FilesView.swift */; };
-		2B47436E2CC8FC2D00A3EF34 /* KSPlayer in Frameworks */ = {isa = PBXBuildFile; productRef = 2B47436D2CC8FC2D00A3EF34 /* KSPlayer */; };
 		2B4743742CC8FD1800A3EF34 /* libssl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B4743722CC8FD1800A3EF34 /* libssl.a */; };
 		2B4743752CC8FD1800A3EF34 /* libcrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B4743732CC8FD1800A3EF34 /* libcrypto.a */; };
 		2B4743762CCA7FFC00A3EF34 /* libaria2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B3901CE2CC8E57F00110EEE /* libaria2.a */; };
+		2B4B37362CF38C1B00ADA610 /* KSPlayer in Frameworks */ = {isa = PBXBuildFile; productRef = 2B4B37352CF38C1B00ADA610 /* KSPlayer */; };
 		2B4DD2592CAA769300AA6DBB /* aria2App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B4DD2582CAA769300AA6DBB /* aria2App.swift */; };
 		2B4DD25B2CAA769300AA6DBB /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B4DD25A2CAA769300AA6DBB /* HomeView.swift */; };
 		2B4DD25D2CAA769500AA6DBB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B4DD25C2CAA769500AA6DBB /* Assets.xcassets */; };
@@ -79,8 +79,8 @@
 			files = (
 				2B4743742CC8FD1800A3EF34 /* libssl.a in Frameworks */,
 				2B4743752CC8FD1800A3EF34 /* libcrypto.a in Frameworks */,
-				2B47436E2CC8FC2D00A3EF34 /* KSPlayer in Frameworks */,
 				2BE720312CB4DD0D00B11F44 /* libxml2.tbd in Frameworks */,
+				2B4B37362CF38C1B00ADA610 /* KSPlayer in Frameworks */,
 				2B4DD27F2CAA816B00AA6DBB /* libsqlite3.tbd in Frameworks */,
 				2B4DD27B2CAA816300AA6DBB /* libz.tbd in Frameworks */,
 				2B4DD2782CAA815900AA6DBB /* libexpat.tbd in Frameworks */,
@@ -199,7 +199,7 @@
 			);
 			name = aria2;
 			packageProductDependencies = (
-				2B47436D2CC8FC2D00A3EF34 /* KSPlayer */,
+				2B4B37352CF38C1B00ADA610 /* KSPlayer */,
 			);
 			productName = aria2;
 			productReference = 2B4DD2552CAA769300AA6DBB /* aria2.app */;
@@ -232,7 +232,7 @@
 			);
 			mainGroup = 2B4DD24C2CAA769300AA6DBB;
 			packageReferences = (
-				2B47436C2CC8FC2D00A3EF34 /* XCRemoteSwiftPackageReference "KSPlayer" */,
+				2B4B37342CF38C1B00ADA610 /* XCRemoteSwiftPackageReference "KSPlayer" */,
 			);
 			productRefGroup = 2B4DD2562CAA769300AA6DBB /* Products */;
 			projectDirPath = "";
@@ -443,7 +443,7 @@
 					"$(PROJECT_DIR)/libaria2/lib",
 					"$(PROJECT_DIR)/openssl/lib",
 				);
-				MARKETING_VERSION = 1.1;
+				MARKETING_VERSION = 1.2;
 				PRODUCT_BUNDLE_IDENTIFIER = com.gendago.aria2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -486,7 +486,7 @@
 					"$(PROJECT_DIR)/libaria2/lib",
 					"$(PROJECT_DIR)/openssl/lib",
 				);
-				MARKETING_VERSION = 1.1;
+				MARKETING_VERSION = 1.2;
 				PRODUCT_BUNDLE_IDENTIFIER = com.gendago.aria2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -520,9 +520,9 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		2B47436C2CC8FC2D00A3EF34 /* XCRemoteSwiftPackageReference "KSPlayer" */ = {
+		2B4B37342CF38C1B00ADA610 /* XCRemoteSwiftPackageReference "KSPlayer" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/kingslay/KSPlayer";
+			repositoryURL = "https://github.com/sunzongzheng/KSPlayer.git";
 			requirement = {
 				branch = main;
 				kind = branch;
@@ -531,9 +531,9 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		2B47436D2CC8FC2D00A3EF34 /* KSPlayer */ = {
+		2B4B37352CF38C1B00ADA610 /* KSPlayer */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 2B47436C2CC8FC2D00A3EF34 /* XCRemoteSwiftPackageReference "KSPlayer" */;
+			package = 2B4B37342CF38C1B00ADA610 /* XCRemoteSwiftPackageReference "KSPlayer" */;
 			productName = KSPlayer;
 		};
 /* End XCSwiftPackageProductDependency section */
