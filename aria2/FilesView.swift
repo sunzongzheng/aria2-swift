@@ -80,6 +80,19 @@ struct FilesView: View {
                                 .padding(.leading, 8)
                                 .padding(.vertical, 10)
                                 .frame(maxWidth: .infinity, alignment: .leading)
+                            }
+                                .onTapGesture {
+                                    if item.isDirectory {
+                                        refreshFileList(directoryPath: item.path)
+                                    } else if (item.icon == "video.fill" || item.icon == "music.note") {
+                                        self.videoSrc = item.path
+                                        self.videoTitle = item.name
+                                        self.videoOptions = KSOptions()
+                                        self.showVideoPlayerViewController = true
+                                    } else {
+                                        self.showAlert = true
+                                    }
+                                }
                                 .conditionalSwipeActions(
                                     swipeActions: {
                                         if #available(iOS 15.0, *) {
@@ -104,19 +117,6 @@ struct FilesView: View {
                                         showActionSheet = true
                                     }
                                 )
-                            }
-                                .onTapGesture {
-                                    if item.isDirectory {
-                                        refreshFileList(directoryPath: item.path)
-                                    } else if (item.icon == "video.fill" || item.icon == "music.note") {
-                                        self.videoSrc = item.path
-                                        self.videoTitle = item.name
-                                        self.videoOptions = KSOptions()
-                                        self.showVideoPlayerViewController = true
-                                    } else {
-                                        self.showAlert = true
-                                    }
-                                }
                         }
                     }
                 }
@@ -142,11 +142,12 @@ struct FilesView: View {
                     }
                 }
             }
+            .accentColor(.accentColor)
             .onAppear {
                 refreshFileList()
             }
             .sheet(isPresented: $showVideoPlayerViewController) {
-                if #available(iOS 16.0, *){
+                if #available(iOS 16.0, *) {
                     CustomKSVideoPlayerView(videoSrc: $videoSrc, videoTitle: $videoTitle, videoOptions: $videoOptions)
                                     .ignoresSafeArea()
                 } else{
@@ -213,13 +214,17 @@ struct FilesView: View {
     }
     
     func getIcon(for file: String) -> String {
-        let fileExtension = file.split(separator: ".").last?.lowercased() ?? ""
-        switch fileExtension {
-        case "mp3", "wav", "flac", "ape":
-            return "music.note"
-        case "mp4", "flv", "m3u8", "mkv", "avi", "mov", "wmv", "rm", "rmvb", "3gp", "m4v", "dat", "vob", "mpeg", "dv", "mod":
-            return "video.fill"
-        default:
+        if #available(iOS 16.0, *) {
+            let fileExtension = file.split(separator: ".").last?.lowercased() ?? ""
+            switch fileExtension {
+            case "mp3", "wav", "flac", "ape":
+                return "music.note"
+            case "mp4", "flv", "m3u8", "mkv", "avi", "mov", "wmv", "rm", "rmvb", "3gp", "m4v", "dat", "vob", "mpeg", "dv", "mod":
+                return "video.fill"
+            default:
+                return "doc.fill"
+            }
+        } else {
             return "doc.fill"
         }
     }

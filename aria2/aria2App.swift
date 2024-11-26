@@ -35,6 +35,7 @@ struct TabBarView: View {
                 .tabItem {
                     Label("Files", systemImage: "folder")
                 }
+                .accentColor(.white)
             
             NavigationView {
                 SettingView()

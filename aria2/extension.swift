@@ -57,9 +57,9 @@ struct ConditionalSwipeActionsModifier: ViewModifier {
             }
         } else {
             content
-                .onLongPressGesture {
+                .simultaneousGesture(LongPressGesture().onEnded({_ in
                     longPressActions?()
-                }
+                }))
         }
     }
 }
