@@ -10,7 +10,6 @@
 		2B3901C02CC88A2700110EEE /* jm.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2B3901BE2CC88A2700110EEE /* jm.mp3 */; };
 		2B3901C12CC88A2700110EEE /* HCKeepBGRunManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3901BF2CC88A2700110EEE /* HCKeepBGRunManager.swift */; };
 		2B3901C42CC88BFD00110EEE /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = 2B3901C32CC88BFD00110EEE /* index.html */; };
-		2B3901C62CC88CFA00110EEE /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3901C52CC88CFA00110EEE /* SettingView.swift */; };
 		2B3901C82CC88D9C00110EEE /* globalViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3901C72CC88D9C00110EEE /* globalViewModel.swift */; };
 		2B3901CA2CC8A8C600110EEE /* extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3901C92CC8A8C600110EEE /* extension.swift */; };
 		2B3901CC2CC8C25E00110EEE /* FilesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3901CB2CC8C25E00110EEE /* FilesView.swift */; };
@@ -27,6 +26,14 @@
 		2B4DD27B2CAA816300AA6DBB /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B4DD27A2CAA816300AA6DBB /* libz.tbd */; };
 		2B4DD27F2CAA816B00AA6DBB /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B4DD27D2CAA816B00AA6DBB /* libsqlite3.tbd */; };
 		2BC2FB722CBBB69000F2465A /* LocalNetworkPermissionChecker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BC2FB712CBBB69000F2465A /* LocalNetworkPermissionChecker.swift */; };
+		2BD5579A2CF84A5100D98043 /* ca.crt in Resources */ = {isa = PBXBuildFile; fileRef = 2BD557932CF84A5100D98043 /* ca.crt */; };
+		2BD5579B2CF84A5100D98043 /* server.crt in Resources */ = {isa = PBXBuildFile; fileRef = 2BD557942CF84A5100D98043 /* server.crt */; };
+		2BD5579C2CF84A5100D98043 /* ca.srl in Resources */ = {isa = PBXBuildFile; fileRef = 2BD557952CF84A5100D98043 /* ca.srl */; };
+		2BD5579D2CF84A5100D98043 /* server.csr in Resources */ = {isa = PBXBuildFile; fileRef = 2BD557962CF84A5100D98043 /* server.csr */; };
+		2BD5579E2CF84A5100D98043 /* ca.key in Resources */ = {isa = PBXBuildFile; fileRef = 2BD557972CF84A5100D98043 /* ca.key */; };
+		2BD5579F2CF84A5100D98043 /* server.key in Resources */ = {isa = PBXBuildFile; fileRef = 2BD557982CF84A5100D98043 /* server.key */; };
+		2BD557A02CF84A5100D98043 /* generate-cert.sh in Resources */ = {isa = PBXBuildFile; fileRef = 2BD557992CF84A5100D98043 /* generate-cert.sh */; };
+		2BD557A22CF8543000D98043 /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD557A12CF8543000D98043 /* SettingView.swift */; };
 		2BE567002CD747750001AFA8 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2BE567022CD747750001AFA8 /* Localizable.strings */; };
 		2BE720312CB4DD0D00B11F44 /* libxml2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B4DD2802CAA9FCF00AA6DBB /* libxml2.tbd */; };
 /* End PBXBuildFile section */
@@ -35,7 +42,6 @@
 		2B3901BE2CC88A2700110EEE /* jm.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = jm.mp3; sourceTree = "<group>"; };
 		2B3901BF2CC88A2700110EEE /* HCKeepBGRunManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HCKeepBGRunManager.swift; sourceTree = "<group>"; };
 		2B3901C32CC88BFD00110EEE /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
-		2B3901C52CC88CFA00110EEE /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
 		2B3901C72CC88D9C00110EEE /* globalViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = globalViewModel.swift; sourceTree = "<group>"; };
 		2B3901C92CC8A8C600110EEE /* extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extension.swift; sourceTree = "<group>"; };
 		2B3901CB2CC8C25E00110EEE /* FilesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilesView.swift; sourceTree = "<group>"; };
@@ -68,6 +74,14 @@
 		2BC2FB6D2CBBA50100F2465A /* libssl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libssl.a; path = "iPhoneOS17.2-arm64.sdk/lib/libssl.a"; sourceTree = "<group>"; };
 		2BC2FB6E2CBBA50100F2465A /* libcrypto.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcrypto.a; path = "iPhoneOS17.2-arm64.sdk/lib/libcrypto.a"; sourceTree = "<group>"; };
 		2BC2FB712CBBB69000F2465A /* LocalNetworkPermissionChecker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalNetworkPermissionChecker.swift; sourceTree = "<group>"; };
+		2BD557932CF84A5100D98043 /* ca.crt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ca.crt; sourceTree = "<group>"; };
+		2BD557942CF84A5100D98043 /* server.crt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = server.crt; sourceTree = "<group>"; };
+		2BD557952CF84A5100D98043 /* ca.srl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ca.srl; sourceTree = "<group>"; };
+		2BD557962CF84A5100D98043 /* server.csr */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = server.csr; sourceTree = "<group>"; };
+		2BD557972CF84A5100D98043 /* ca.key */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ca.key; sourceTree = "<group>"; };
+		2BD557982CF84A5100D98043 /* server.key */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = server.key; sourceTree = "<group>"; };
+		2BD557992CF84A5100D98043 /* generate-cert.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = "generate-cert.sh"; sourceTree = "<group>"; };
+		2BD557A12CF8543000D98043 /* SettingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
 		2BE567012CD747750001AFA8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		2BE567032CD747990001AFA8 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -111,6 +125,7 @@
 		2B4DD24C2CAA769300AA6DBB = {
 			isa = PBXGroup;
 			children = (
+				2B9D73262CF6C45600E36AF0 /* cert */,
 				2B3901D02CC8E5BF00110EEE /* libaria2 */,
 				2B3901C22CC88BE600110EEE /* www */,
 				2B3901BD2CC889FE00110EEE /* background */,
@@ -132,6 +147,7 @@
 		2B4DD2572CAA769300AA6DBB /* aria2 */ = {
 			isa = PBXGroup;
 			children = (
+				2BD557A12CF8543000D98043 /* SettingView.swift */,
 				2B5A0FCF2CBA8A390090403F /* Info.plist */,
 				2B4DD2582CAA769300AA6DBB /* aria2App.swift */,
 				2B4DD25A2CAA769300AA6DBB /* HomeView.swift */,
@@ -141,7 +157,6 @@
 				2B4DD2712CAA7B6800AA6DBB /* aria2-Bridging-Header.h */,
 				2B4DD2742CAA7B8B00AA6DBB /* Aria2Downloader.h */,
 				2BC2FB712CBBB69000F2465A /* LocalNetworkPermissionChecker.swift */,
-				2B3901C52CC88CFA00110EEE /* SettingView.swift */,
 				2B3901C72CC88D9C00110EEE /* globalViewModel.swift */,
 				2B3901C92CC8A8C600110EEE /* extension.swift */,
 				2B3901CB2CC8C25E00110EEE /* FilesView.swift */,
@@ -180,6 +195,20 @@
 				2B4DD26D2CAA794600AA6DBB /* libaria2.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2B9D73262CF6C45600E36AF0 /* cert */ = {
+			isa = PBXGroup;
+			children = (
+				2BD557932CF84A5100D98043 /* ca.crt */,
+				2BD557972CF84A5100D98043 /* ca.key */,
+				2BD557952CF84A5100D98043 /* ca.srl */,
+				2BD557992CF84A5100D98043 /* generate-cert.sh */,
+				2BD557942CF84A5100D98043 /* server.crt */,
+				2BD557962CF84A5100D98043 /* server.csr */,
+				2BD557982CF84A5100D98043 /* server.key */,
+			);
+			path = cert;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -249,10 +278,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				2BE567002CD747750001AFA8 /* Localizable.strings in Resources */,
+				2BD5579B2CF84A5100D98043 /* server.crt in Resources */,
+				2BD5579A2CF84A5100D98043 /* ca.crt in Resources */,
 				2B3901C42CC88BFD00110EEE /* index.html in Resources */,
 				2B4DD2602CAA769500AA6DBB /* Preview Assets.xcassets in Resources */,
+				2BD5579E2CF84A5100D98043 /* ca.key in Resources */,
+				2BD5579C2CF84A5100D98043 /* ca.srl in Resources */,
+				2BD557A02CF84A5100D98043 /* generate-cert.sh in Resources */,
 				2B4DD25D2CAA769500AA6DBB /* Assets.xcassets in Resources */,
 				2B3901C02CC88A2700110EEE /* jm.mp3 in Resources */,
+				2BD5579F2CF84A5100D98043 /* server.key in Resources */,
+				2BD5579D2CF84A5100D98043 /* server.csr in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,8 +302,8 @@
 				2B3901C82CC88D9C00110EEE /* globalViewModel.swift in Sources */,
 				2B4DD2732CAA7B6800AA6DBB /* Aria2Downloader.mm in Sources */,
 				2BC2FB722CBBB69000F2465A /* LocalNetworkPermissionChecker.swift in Sources */,
+				2BD557A22CF8543000D98043 /* SettingView.swift in Sources */,
 				2B4DD25B2CAA769300AA6DBB /* HomeView.swift in Sources */,
-				2B3901C62CC88CFA00110EEE /* SettingView.swift in Sources */,
 				2B3901C12CC88A2700110EEE /* HCKeepBGRunManager.swift in Sources */,
 				2B3901CC2CC8C25E00110EEE /* FilesView.swift in Sources */,
 				2B4DD2592CAA769300AA6DBB /* aria2App.swift in Sources */,
@@ -443,7 +479,7 @@
 					"$(PROJECT_DIR)/libaria2/lib",
 					"$(PROJECT_DIR)/openssl/lib",
 				);
-				MARKETING_VERSION = 1.3;
+				MARKETING_VERSION = 1.4;
 				PRODUCT_BUNDLE_IDENTIFIER = com.gendago.aria2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -486,7 +522,7 @@
 					"$(PROJECT_DIR)/libaria2/lib",
 					"$(PROJECT_DIR)/openssl/lib",
 				);
-				MARKETING_VERSION = 1.3;
+				MARKETING_VERSION = 1.4;
 				PRODUCT_BUNDLE_IDENTIFIER = com.gendago.aria2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;

@@ -3,12 +3,61 @@ import UIKit
 
 struct SettingView: View {
     @AppStorage("backgroundMode") private var backgroundMode: Bool = false
-    @State private var showAlert = false
+    @AppStorage("sslMode") private var sslMode: Bool = false
+    @State private var showAboutAlert = false
+    @State private var showSSLAlert: Bool = false
+    @State private var sslAlertChangeLock: Bool = false
     
     var body: some View {
         Form {
             Section (header: Text("Common").textCase(.none)) {
                 Toggle("BackgroundRun", isOn: $backgroundMode)
+                HStack {
+                    Text("SSL")
+                    Spacer()
+                    Toggle("SSL", isOn: $sslMode)
+                        .labelsHidden()
+                        .onChange(of: sslMode) { _ in
+                            if (sslAlertChangeLock) {
+                                return
+                            }
+                            DispatchQueue.main.asyncAfter(deadline: .now() + 0.1, execute: {
+                                UserDefaults.standard.synchronize()
+                                showSSLAlert = true
+                            })
+                        }
+                        .alert(isPresented: $showSSLAlert) {
+                            Alert(
+                                title: Text(sslMode ? "ConfirmSSLTurnOnTitle" : "ConfirmSSLTurnOffTitle"),
+                                message: Text(sslMode ? "ConfirmSSLTurnOnText" : "ConfirmSSLTurnOffText"),
+                                primaryButton: .default(Text("Confirm")) {
+                                    exit(0)
+                                },
+                                secondaryButton: .cancel(Text("Cancel")) {
+                                    sslMode = !sslMode
+                                    sslAlertChangeLock = true
+                                    showSSLAlert = false
+                                    DispatchQueue.main.asyncAfter(deadline: .now() + 0.1, execute: {
+                                        sslAlertChangeLock = false
+                                    })
+                                }
+                            )
+                        }
+                }
+                if sslMode {
+                    Button(action: {
+                        openLink(urlString: "https://aria2-server-ca.gendago.cc")
+                    }) {
+                        HStack {
+                            Text("InstallRootCertificate")
+                                .font(.body)
+                            Spacer()
+                            Image(systemName: "chevron.right")
+                                .foregroundColor(.gray)
+                                .font(.body)
+                        }
+                    }
+                }
             }
             Section (header: Text("Verion").textCase(.none)) {
                 let version = Bundle.main.infoDictionary?["CFBundleShortVersionString"] as! String
@@ -29,7 +78,7 @@ struct SettingView: View {
             }
             Section (header: Text("About").textCase(.none)) {
                 Button(action: {
-                    self.showAlert = true
+                    self.showAboutAlert = true
                 }) {
                     HStack {
                         Text("About")
@@ -40,7 +89,7 @@ struct SettingView: View {
                             .font(.body)
                     }
                 }
-                .alert(isPresented: $showAlert) {
+                .alert(isPresented: $showAboutAlert) {
                     Alert(
                         title: Text("About"),
                         message: Text("\(Bundle.main.localizedString(forKey: "License", value: nil, table: "Localizable"))\nhttps://github.com/sunzongzheng/aria2-swift\nhttps://github.com/sunzongzheng/aria2-ios\nhttps://github.com/sunzongzheng/AriaNg"),

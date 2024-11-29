@@ -20,5 +20,12 @@
 "License" = "本应用遵循GPL2.0开源协议";
 "OK" = "确定";
 "JoinDiscussion" = "加入交流群";
+"ConfirmSSLTurnOnTitle" = "确认开启SSL模式";
+"ConfirmSSLTurnOffTitle" = "确认关闭SSL模式";
+"ConfirmSSLTurnOnText" = "开启后仅能通过https、wss协议连接aria2\n点击确认后将退出App，请手动重新打开App\n并且你需要安装SSL根证书以保证功能正常";
+"ConfirmSSLTurnOffText" = "关闭后仅能通过http、ws协议连接aria2\n点击确认后将退出App，请手动重新打开App";
+"InstallRootCertificate" = "安装SSL根证书";
 
+"Confirm" = "确认";
+"Cancel" = "取消";
 

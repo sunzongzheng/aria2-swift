@@ -20,3 +20,11 @@
 "License" = "This application complies with the GPL2.0 open source agreement";
 "OK" = "OK";
 "JoinDiscussion" = "Join the communication group";
+"ConfirmSSLTurnOnTitle" = "Confirm Turn On SSL";
+"ConfirmSSLTurnOffTitle" = "Confirm Turn Off SSL";
+"ConfirmSSLTurnOnText" = "After it is enabled, you can only connect to aria2 via https and wss protocols\nClicking Confirm will exit the App. Please reopen the App manually.\nAnd you should install the SSL root certificate to ensure proper functionality";
+"ConfirmSSLTurnOffText" = "After closing, you can only connect to aria2 via http and ws protocols\nClicking Confirm will exit the App. Please reopen the App manually.";
+"InstallRootCertificate" = "Install SSL Root Certificate";
+
+"Confirm" = "Confirm";
+"Cancel" = "Cancel";

@@ -25,7 +25,16 @@ class GlobalViewModel: ObservableObject {
         } else {
             print("Downloads目录已存在")
         }
-        downloader.startRPCServer(documentDirectory.path)
+        let sslMode: Bool = UserDefaults.standard.bool(forKey: "sslMode")
+        if (sslMode) {
+            downloader.startRPCServer(
+                documentDirectory.path,
+                crtPath: Bundle.main.path(forResource: "server", ofType: "crt")!,
+                keyPath: Bundle.main.path(forResource: "server", ofType: "key")!
+            )
+        } else {
+            downloader.startRPCServer(documentDirectory.path)
+        }
     }
 
     func writeDefaultConfigFile() {
